@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Eletrônicos</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.header {
+    background-color: #363636;
+    color: white;
+    margin: 1px;
+    padding: 20px; 
+    height: 110px;
+    font-weight: 100%;
+    text-align: right;
+}
+
+.header img {
+    width: 200px;
+    height: 120px;
+    margin: -60px 15px -1px 0px;
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 3.6em;
+    margin: -1px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    font-size: 1.2rem;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  li a:hover {
+    background-color: gray;
+  }
+
+h1 {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #d9d9d9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.contact-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.contact-card p strong {
+    color: #333;
+    font-size: 80%;
+}
+
+p {
+    margin-left: 15px;
+    font-size: 1.5em;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.notebook {
+    margin-right: 30%;
+}
+
+
+button {
+    background-color: #d9d9d9;
+    font-size: 70%;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+footer {
+    background-color: #363636;
+    text-align: center;
+    color: #d9d9d9;
+    padding: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .header {
+        display: block;
+        background-color: #d9d9d9;
+    }
+
+    ul {
+        background-color: #363636;
+        color: #d9d9d9;
+    }
+
+    li a {
+        color: #d9d9d9;
+    }
+
+    .principal {
+        display: block;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .paragraph {
+        color: black;
+    }
+
+    footer {
+        color: black;
+        background: #d9d9d9;
+    }
+
+    .contact-card {
+        background-color: #363636;
+    }
+
+    .contact-card h2 {
+        color: #d9d9d9;
+    }
+
+    .contact-card p {
+        color: #d9d9d9;
+    }
+
+    .contact-card p strong {
+        color: #d9d9d9;
+    }
+} 
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <p class="paragraph">MEGA ELETRÔNICOS</p>
+            <div class="logo">
+                <img src="./Img/logo.webp" width="100" height="50">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Sobre">Sobre</a></li>
+            <li><a href="#Contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1>Bem vindo a mega eletrônicos!</h1>
+
+    <p>Encontre os melhores produtos eletrônicos para o seu dia a dia.</p>
+
+    <main class="principal">
+        <div>
+            <img src="./Img/notebook.webp" width="300" height="250">
+            <p>Temos os notebooks<br>para você poder trabalhar<br> tranquilamente do conforto<br> de sua casa.<br> <a
+                    href="index2.html"><button>Saiba mais</button></a></p>
+        </div>
+
+        <div>
+            <img src="./Img/tablet.png" width="300" height="250">
+            <p>Aqui temos tablets de alta<br> qualidade para o seu gosto.<br> <a href="index3.html"><button>Saiba
+                        mais</button></a></p>
+        </div>
+
+        <div>
+            <img src="./Img/celular.webp" width="300" height="250">
+            <p>Encontre aqui os melhores<br> celulares para você.<br><a href="index4.html"><button>Saiba
+                        mais</button></a></p>
+        </div>
+    </main>
+
+    <br>
+    <br>
+
+      <div class="content-wrapper">
+        <div class="contact-card">
+            <h2>Contacte-nos</h2>
+            <p><strong>Nome:</strong> Mega Eletrônicos</p>
+            <p><strong>Email:</strong> mega.2024@gmail.com</p>
+            <p><strong>Telefone:</strong> 55 013 91347-8664</p>
+            <p><strong>Endereço:</strong> Rua Benedito, 123, São Paulo, Brasil</p>
+        </div>
+      </div>
+
+    <footer>
+        <p>&copy 2024 mega eletrônicos. Todos os direitos reservados.</p>
+    </footer>
+</body> 
+
+</html>

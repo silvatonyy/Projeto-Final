@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebooks</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    margin: 1px;
+    padding: 20px; 
+    height: 110px;
+    font-weight: 100%;
+    text-align: right;
+}
+
+.paragraphnot {
+    text-align: center;
+    font-size: 2.4em;
+    margin: -1px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    font-size: 1.2rem;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: black;
+    color: white;
+  }
+
+.principalnot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+
+.informativonot {
+    display: flex;
+    justify-content: space-around;
+    font-size: 100%;
+    font-size: 20px;
+}
+
+button {
+    background-color: #d9d9d9;
+    font-size: 70%;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.contact-card {
+    background-color: #d9d9d9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+
+.contact-card h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.contact-card p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.contact-card p strong {
+    color: #333;
+    font-size: 80%;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: #d9d9d9;
+    padding: 20px;
+    font-size: 20px;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 1.5em;
+}
+
+.primeiro_paragrafo {
+    margin-left: 15px;
+    font-size: 1.6em;
+}
+
+@media screen and (max-width: 700px) {
+    .paragraphnot {
+        color: black;
+    }
+
+    .header {
+        background-color: #d9d9d9;
+    }
+
+    ul {
+        display: block;
+        background-color: black;
+        color: white;
+    }
+
+    li a {
+        color: #d9d9d9;
+    }
+
+    .principalnot {
+        display: block;
+        margin-left: 20px;
+    }
+
+    .contact-card {
+        background-color: #363636;
+    }
+
+    .contact-card h2 {
+        color: #d9d9d9;
+    }
+
+    .contact-card p {
+        color: #d9d9d9;
+    }
+
+    .contact-card p strong {
+        color: #d9d9d9;
+    }
+
+    footer {
+        color: black;
+        background: #d9d9d9;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header">
+                <p class="paragraphnot">Confira aqui os melhores notebook para o seu dia dia.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1>Bem vindo a página de notebooks!</h1>
+
+    <p class="primeiro_paragrafo">Aqui temos notebooks das melhores marcas da atualidade, dá um confira abaixo em nossos produtos.</p>
+
+    <main class="principalnot">
+        <div>
+             <img src="./Img/vaio1.png" width="320" height="250">
+             <p>Com um acabamento<br> especial, esse SONY VAIO,<br> vai tornar o seu dia muito melhor.<br><br><b>Valor R$3.500,00 à vista ou<br>10 x de R$350,00</b><br><br></p> <button onclick="myFunction()">Comprar</button>
+         </div>
+        <div>
+            <img  src="./Img/dell1.png" alt="smiley" width="320" height="250">
+            <p>Esse dell GAMER é essencial<br> para quem gostar de jogar online.<br><br><b>Valor R$4.500,00 à vista ou<br>10 x de R$450,00</b><br><br></p> <button onclick="myFunction()">Comprar</button>
+        </div>
+
+        <div>
+            <img  src="./Img/apple1.png" width="320" height="250">
+            <p>Com essa espessura fina<br> esse MAC AIR é perfeito<br> para levar para onde quiser.<br><br><b>Valor R$6.500,00 à vista ou<br>10 x de R$650,00</b><br><br></p> <button onclick="myFunction()">Comprar</button>
+        </div>
+    </main>
+
+    <br>
+        <br>
+
+        <div class="content-wrapper">
+            <div class="contact-card">
+                <h2>Contacte-nos</h2>
+                <p><strong>Nome:</strong> Mega Eletrônicos</p>
+                <p><strong>Email:</strong> mega.2024@gmail.com</p>
+                <p><strong>Telefone:</strong> 55 013 91347-8664</p>
+                <p><strong>Endereço:</strong> Rua Benedito, 123, São Paulo, Brasil</p>
+            </div>
+          </div>
+
+        <footer>
+            <p>&copy 2024 mega eletrônicos. Todos os direitos reservados.</p>
+        </footer>
+        <script>
+            function myFunction() {
+              alert("Parábens você fez um ótima compra!");
+            }
+        </script>
+</body>
+</html>
